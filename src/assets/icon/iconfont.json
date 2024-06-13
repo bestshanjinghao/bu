@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "40573717",
+      "name": "阳爻",
+      "font_class": "yang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "40574421",
+      "name": "阴爻",
+      "font_class": "ying",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

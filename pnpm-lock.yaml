@@ -5,12 +5,30 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fullcalendar/core':
+    specifier: ^6.1.14
+    version: 6.1.14
+  '@fullcalendar/daygrid':
+    specifier: ^6.1.14
+    version: 6.1.14(@fullcalendar/core@6.1.14)
+  '@fullcalendar/interaction':
+    specifier: ^6.1.14
+    version: 6.1.14(@fullcalendar/core@6.1.14)
+  '@fullcalendar/vue':
+    specifier: ^6.1.14
+    version: 6.1.14(@fullcalendar/core@6.1.14)(vue@2.7.16)
   core-js:
-    specifier: ^3.8.3
+    specifier: ^3.37.1
     version: 3.37.1
+  element-ui:
+    specifier: ^2.15.14
+    version: 2.15.14(vue@2.7.16)
   vue:
     specifier: ^2.6.14
     version: 2.7.16
+  vue-lunar-full-calendar:
+    specifier: ^1.3.2
+    version: 1.3.2
 
 devDependencies:
   '@babel/core':
@@ -1403,6 +1421,38 @@ packages:
       - supports-color
     dev: true
 
+  /@fullcalendar/core@6.1.14:
+    resolution: {integrity: sha512-hIPRBevm0aMc2aHy1hRIJgXmI1QTvQM1neQa9oxtuqUmF1+ApYC3oAdwcQMTuI7lHHw3pKJDyJFkKLPPnL6HXA==, tarball: https://registry.npmmirror.com/@fullcalendar/core/-/core-6.1.14.tgz}
+    dependencies:
+      preact: 10.12.1
+    dev: false
+
+  /@fullcalendar/daygrid@6.1.14(@fullcalendar/core@6.1.14):
+    resolution: {integrity: sha512-DSyjiA1dEM8k3bOCrZpZOmAOZu71KGtH02ze+4QKuhxkmn/zQghmmLRdfzpOrcyJg6xGKkoB4pBcO+2lXar8XQ==, tarball: https://registry.npmmirror.com/@fullcalendar/daygrid/-/daygrid-6.1.14.tgz}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.14
+    dependencies:
+      '@fullcalendar/core': 6.1.14
+    dev: false
+
+  /@fullcalendar/interaction@6.1.14(@fullcalendar/core@6.1.14):
+    resolution: {integrity: sha512-rXum5XCjq+WEPNctFeYL/JKZGeU2rlxrElygocdMegcrIBJQW5hnWWVE+i4/1dOmUKF80CbGVlXUyYXoqK2eFg==, tarball: https://registry.npmmirror.com/@fullcalendar/interaction/-/interaction-6.1.14.tgz}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.14
+    dependencies:
+      '@fullcalendar/core': 6.1.14
+    dev: false
+
+  /@fullcalendar/vue@6.1.14(@fullcalendar/core@6.1.14)(vue@2.7.16):
+    resolution: {integrity: sha512-1RUMtOfD6ibE5tXNQjgNiamlBI00TBP7W/64Md844XU4pQQ/efeT9zehI4d9ffS7h9wcveo3iTBdMIPXnYwgSw==, tarball: https://registry.npmmirror.com/@fullcalendar/vue/-/vue-6.1.14.tgz}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.14
+      vue: ^2.6.12
+    dependencies:
+      '@fullcalendar/core': 6.1.14
+      vue: 2.7.16
+    dev: false
+
   /@hapi/hoek@9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==, tarball: https://registry.npmmirror.com/@hapi/hoek/-/hoek-9.3.0.tgz}
     dev: true
@@ -2536,6 +2586,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /async-validator@1.8.5:
+    resolution: {integrity: sha512-tXBM+1m056MAX0E8TL2iCjg8WvSyXu0Zc8LNtYqrVeyoL3+esHRZ4SieE9fKQyyU09uONjnMEjrNBMqT0mbvmA==, tarball: https://registry.npmmirror.com/async-validator/-/async-validator-1.8.5.tgz}
+    dependencies:
+      babel-runtime: 6.26.0
+    dev: false
+
   /async@2.6.4:
     resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==, tarball: https://registry.npmmirror.com/async/-/async-2.6.4.tgz}
     dependencies:
@@ -2562,6 +2618,10 @@ packages:
       postcss: 8.4.38
       postcss-value-parser: 4.2.0
     dev: true
+
+  /babel-helper-vue-jsx-merge-props@2.0.3:
+    resolution: {integrity: sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==, tarball: https://registry.npmmirror.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz}
+    dev: false
 
   /babel-loader@8.3.0(@babel/core@7.24.7)(webpack@5.91.0):
     resolution: {integrity: sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q==, tarball: https://registry.npmmirror.com/babel-loader/-/babel-loader-8.3.0.tgz}
@@ -2619,6 +2679,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /babel-runtime@6.26.0:
+    resolution: {integrity: sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==, tarball: https://registry.npmmirror.com/babel-runtime/-/babel-runtime-6.26.0.tgz}
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
+    dev: false
 
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==, tarball: https://registry.npmmirror.com/balanced-match/-/balanced-match-1.0.2.tgz}
@@ -3193,6 +3260,12 @@ packages:
       browserslist: 4.23.1
     dev: true
 
+  /core-js@2.6.12:
+    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==, tarball: https://registry.npmmirror.com/core-js/-/core-js-2.6.12.tgz}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
+    dev: false
+
   /core-js@3.37.1:
     resolution: {integrity: sha512-Xn6qmxrQZyB0FFY8E3bgRXei3lWDJHhvI+u0q9TKIYM49G8pAr0FgnnrFRAmsbptZL1yxRADVXn+x5AGsbBfyw==, tarball: https://registry.npmmirror.com/core-js/-/core-js-3.37.1.tgz}
     requiresBuild: true
@@ -3447,7 +3520,6 @@ packages:
   /deepmerge@1.5.2:
     resolution: {integrity: sha512-95k0GDqvBjZavkuvzx/YqVLv/6YYa17fz6ILMSf7neqQITCPbnfEnQvEgMPNjH4kgobe7+WIL0yJEHku+H3qtQ==, tarball: https://registry.npmmirror.com/deepmerge/-/deepmerge-1.5.2.tgz}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /default-gateway@6.0.3:
     resolution: {integrity: sha512-fwSOJsbbNzZ/CUFpqFBqYfYNLj1NbMPm8MMCIzHjC83iSJRBEGmDUxU+WP661BaBQImeC2yHwXtz+P/O9o+XEg==, tarball: https://registry.npmmirror.com/default-gateway/-/default-gateway-6.0.3.tgz}
@@ -3590,6 +3662,20 @@ packages:
   /electron-to-chromium@1.4.798:
     resolution: {integrity: sha512-by9J2CiM9KPGj9qfp5U4FcPSbXJG7FNzqnYaY4WLzX+v2PHieVGmnsA4dxfpGE3QEC7JofpPZmn7Vn1B9NR2+Q==, tarball: https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.798.tgz}
     dev: true
+
+  /element-ui@2.15.14(vue@2.7.16):
+    resolution: {integrity: sha512-2v9fHL0ZGINotOlRIAJD5YuVB8V7WKxrE9Qy7dXhRipa035+kF7WuU/z+tEmLVPBcJ0zt8mOu1DKpWcVzBK8IA==, tarball: https://registry.npmmirror.com/element-ui/-/element-ui-2.15.14.tgz}
+    peerDependencies:
+      vue: ^2.5.17
+    dependencies:
+      async-validator: 1.8.5
+      babel-helper-vue-jsx-merge-props: 2.0.3
+      deepmerge: 1.5.2
+      normalize-wheel: 1.0.1
+      resize-observer-polyfill: 1.5.1
+      throttle-debounce: 1.1.0
+      vue: 2.7.16
+    dev: false
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==, tarball: https://registry.npmmirror.com/emoji-regex/-/emoji-regex-8.0.0.tgz}
@@ -4653,6 +4739,10 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: true
 
+  /jquery@3.7.1:
+    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==, tarball: https://registry.npmmirror.com/jquery/-/jquery-3.7.1.tgz}
+    dev: false
+
   /js-message@1.0.7:
     resolution: {integrity: sha512-efJLHhLjIyKRewNS9EGZ4UpI8NguuL6fKkhRxVuMmrGV2xN/0APGdQYwLFky5w9naebSZ0OwAGp0G6/2Cg90rA==, tarball: https://registry.npmmirror.com/js-message/-/js-message-1.0.7.tgz}
     engines: {node: '>=0.6.0'}
@@ -4808,7 +4898,6 @@ packages:
 
   /lodash.defaultsdeep@4.6.1:
     resolution: {integrity: sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==, tarball: https://registry.npmmirror.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz}
-    dev: true
 
   /lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==, tarball: https://registry.npmmirror.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz}
@@ -5013,6 +5102,10 @@ packages:
     resolution: {integrity: sha512-23g5BFj4zdQL/b6tor7Ji+QY4pEfNH784BMslY9Qb0UnJWRAt+lQGLYmRaM0KDBwIG23ffEBELhZDP2rhi9f/Q==, tarball: https://registry.npmmirror.com/module-alias/-/module-alias-2.2.3.tgz}
     dev: true
 
+  /moment@2.30.1:
+    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==, tarball: https://registry.npmmirror.com/moment/-/moment-2.30.1.tgz}
+    dev: false
+
   /mrmime@2.0.0:
     resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==, tarball: https://registry.npmmirror.com/mrmime/-/mrmime-2.0.0.tgz}
     engines: {node: '>=10'}
@@ -5124,6 +5217,10 @@ packages:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==, tarball: https://registry.npmmirror.com/normalize-url/-/normalize-url-6.1.0.tgz}
     engines: {node: '>=10'}
     dev: true
+
+  /normalize-wheel@1.0.1:
+    resolution: {integrity: sha512-1OnlAPZ3zgrk8B91HyRj+eVv+kS5u+Z0SCsak6Xil/kmgEia50ga7zfkumayonZrImffAxPU/5WcyGhzetHNPA==, tarball: https://registry.npmmirror.com/normalize-wheel/-/normalize-wheel-1.0.1.tgz}
+    dev: false
 
   /npm-run-path@2.0.2:
     resolution: {integrity: sha512-lJxZYlT4DW/bRUtFh1MQIWqmLwQfAxnqWG4HhEdjMlkrJYnJn0Jrr2u3mgxqaWsdiBc76TYkTG/mhrnYTuzfHw==, tarball: https://registry.npmmirror.com/npm-run-path/-/npm-run-path-2.0.2.tgz}
@@ -5756,6 +5853,10 @@ packages:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
+  /preact@10.12.1:
+    resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==, tarball: https://registry.npmmirror.com/preact/-/preact-10.12.1.tgz}
+    dev: false
+
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==, tarball: https://registry.npmmirror.com/prelude-ls/-/prelude-ls-1.2.1.tgz}
     engines: {node: '>= 0.8.0'}
@@ -5910,6 +6011,10 @@ packages:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==, tarball: https://registry.npmmirror.com/regenerate/-/regenerate-1.4.2.tgz}
     dev: true
 
+  /regenerator-runtime@0.11.1:
+    resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz}
+    dev: false
+
   /regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.14.1.tgz}
     dev: true
@@ -5972,6 +6077,10 @@ packages:
   /requires-port@1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==, tarball: https://registry.npmmirror.com/requires-port/-/requires-port-1.0.0.tgz}
     dev: true
+
+  /resize-observer-polyfill@1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==, tarball: https://registry.npmmirror.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz}
+    dev: false
 
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==, tarball: https://registry.npmmirror.com/resolve-from/-/resolve-from-4.0.0.tgz}
@@ -6542,6 +6651,11 @@ packages:
       webpack: 5.91.0
     dev: true
 
+  /throttle-debounce@1.1.0:
+    resolution: {integrity: sha512-XH8UiPCQcWNuk2LYePibW/4qL97+ZQ1AN3FNXwZRBNPPowo/NRU5fAlDCSNBJIYCKbioZfuYtMhG4quqoJhVzg==, tarball: https://registry.npmmirror.com/throttle-debounce/-/throttle-debounce-1.1.0.tgz}
+    engines: {node: '>=4'}
+    dev: false
+
   /thunky@1.1.0:
     resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==, tarball: https://registry.npmmirror.com/thunky/-/thunky-1.1.0.tgz}
     dev: true
@@ -6816,6 +6930,15 @@ packages:
       watchpack: 2.4.1
       webpack: 5.91.0
     dev: true
+
+  /vue-lunar-full-calendar@1.3.2:
+    resolution: {integrity: sha512-VZYGkrrQ90ceecv6/z3yGw9cmyZZdqG4tgxrJ84uZEjg+IYRK6n8T18csIfI/MY/TY1+4enn/u2nlAD3k+viMg==, tarball: https://registry.npmmirror.com/vue-lunar-full-calendar/-/vue-lunar-full-calendar-1.3.2.tgz}
+    engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
+    dependencies:
+      jquery: 3.7.1
+      lodash.defaultsdeep: 4.6.1
+      moment: 2.30.1
+    dev: false
 
   /vue-style-loader@4.1.3:
     resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==, tarball: https://registry.npmmirror.com/vue-style-loader/-/vue-style-loader-4.1.3.tgz}
